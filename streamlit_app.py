@@ -27,4 +27,3 @@ streamlit.text(fruityvice_response.json())
 fruityvice_normalized = pandas.json_noramalize(fruityvice_response.json())
 
 streamlit.dataframe(fruityvice_normalized)
-

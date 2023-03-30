@@ -1,5 +1,7 @@
 import streamlit
 import pandas
+import snowflake.connector
+
 
 # Display Menu
 streamlit.title('My Mom''s New Health Diner!')
@@ -37,4 +39,3 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # display normalized information in a table
 streamlit.dataframe(fruityvice_normalized)
 
-import snowflake.connector
